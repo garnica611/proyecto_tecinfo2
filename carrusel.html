@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Imágenes</title>
+    <link rel="stylesheet" href="estilos_carrusel.css">
+</head>
+<body>
+    <div class="carrusel-contenedor">
+        <div class="carrusel-track">
+            <img src="imagen1.jpg" alt="Imagen 1">
+            <img src="imagen2.jpg" alt="Imagen 2">
+            <img src="imagen3.jpg" alt="Imagen 3">
+            <img src="imagen4.jpg" alt="Imagen 4">
+            <img src="imagen5.jpg" alt="Imagen 5">
+        </div>
+        <button class="anterior">❮</button>
+        <button class="siguiente">❯</button>
+        <ul class="indicadores">
+            <li class="activo" data-indice="0"></li>
+            <li data-indice="1"></li>
+            <li data-indice="2"></li>
+            <li data-indice="3"></li>
+            <li data-indice="4"></li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
