@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.carrusel-contenedor {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.carrusel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-track img {
+    width: 100%;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 8px; /* Para que las imágenes también tengan el borde redondeado */
+}
+
+.anterior, .siguiente {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #333;
+    padding: 10px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.anterior:hover, .siguiente:hover {
+    opacity: 1;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.siguiente {
+    right: 10px;
+}
+
+.indicadores {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.indicadores li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bbb;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.indicadores li.activo {
+    background-color: #333;
+}
+
+/* Animación sutil para el cambio de imagen */
+.carrusel-track.animating {
+    transition: transform 0.3s ease-in-out;
+}
