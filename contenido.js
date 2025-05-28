@@ -18,7 +18,7 @@ function initMap() {
         position: naucalpan,
         map: map,
         title: "Centro de Naucalpan",
-        icon: 'https://maps.google.com/mapfiles/ms/icons/green-dot.png' // Icono de punto verde
+        icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png' // Icono de punto verde
     });
 
     // Otro marcador de ejemplo (simulando un punto de ahorro de agua)
@@ -26,7 +26,7 @@ function initMap() {
         position: { lat: 19.49, lng: -99.25 }, // Coordenadas ficticias
         map: map,
         title: "Jardín Sostenible de la Comunidad",
-        icon: 'https://maps.google.com/mapfiles/ms/icons/blue-dot.png' // Icono de punto azul
+        icon: 'http://maps.google.com/mapfiles/ms/icons/blue-dot.png' // Icono de punto azul
     });
 
     // Puedes añadir más marcadores y personalizarlos
@@ -69,8 +69,3 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
-// Puedes añadir más interactividad si lo deseas, por ejemplo:
-// - Desplazamiento suave al hacer clic en los enlaces de la barra de navegación
-// - Carrusel de imágenes para las historias de éxito
-// - Modal para los eventos
