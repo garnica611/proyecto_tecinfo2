@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardianes del Agua: Pequeñas Acciones, Gran Impacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Guardianes del Agua</h1>
+            <p>Pequeñas Acciones, Gran Impacto</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="intro" class="hero">
+            <h2>¡Únete al movimiento para proteger nuestro recurso más vital!</h2>
+            <p>Cada gota cuenta. Descubre cómo tus acciones diarias pueden hacer una diferencia monumental en la conservación del agua en nuestra comunidad.</p>
+            <a href="#historias" class="btn">Explora Historias de Éxito</a>
+        </section>
+
+        <section id="historias" class="section-card">
+            <h2>Historias de Éxito Locales</h2>
+            <div class="stories-grid">
+                <div class="story-item">
+                    <h3>La Familia Rodríguez y su Jardín Sostenible</h3>
+                    <p>La familia Rodríguez implementó un sistema de recolección de agua de lluvia y eligió plantas nativas en su jardín, reduciendo su consumo de agua en un 40%.</p>
+                </div>
+                <div class="story-item">
+                    <h3>La Escuela Primaria "Las Gotitas"</h3>
+                    <p>Los estudiantes de "Las Gotitas" instalaron aireadores en todos los grifos y enseñaron a sus familias sobre el uso eficiente del agua. ¡Ahora son un modelo para el vecindario!</p>
+                </div>
+                <div class="story-item">
+                    <h3>El Restaurante "El Manantial"</h3>
+                    <p>Con cambios simples como un lavavajillas de alta eficiencia y la reutilización del agua de lavado de vegetales, "El Manantial" ahorra miles de litros al mes.</p>
+                </div>
+            </div>
+            <a href="#contacto" class="btn">¡Comparte tu historia!</a>
+        </section>
+
+        <section id="mapa" class="section-card">
+            <h2>Mapa del Ahorro Comunitario</h2>
+            <p>Descubre los puntos de nuestra comunidad donde se están realizando acciones concretas para el ahorro de agua. ¡Inspírate!</p>
+            <div id="map"></div>
+            <p class="map-note">Este mapa es una simulación. En una implementación real, podría mostrar puntos de ahorro aportados por la comunidad.</p>
+        </section>
+
+        <section id="eventos" class="section-card">
+            <h2>Eventos "Siembra tu Ahorro"</h2>
+            <p>Participa en nuestros talleres y eventos para aprender sobre jardinería eficiente, plantas de bajo consumo de agua y técnicas de recolección de agua de lluvia.</p>
+            <div class="event-item">
+                <h3>Taller de Jardines de Lluvia</h3>
+                <p>Fecha: 15 de Junio, 10:00 AM</p>
+                <p>Lugar: Centro Comunitario "Agua Viva"</p>
+                <p>Aprende a diseñar y construir un jardín que aproveche el agua de lluvia para irrigación.</p>
+            </div>
+            <div class="event-item">
+                <h3>Feria de Plantas Nativas</h3>
+                <p>Fecha: 22 de Junio, 9:00 AM - 2:00 PM</p>
+                <p>Lugar: Parque Central</p>
+                <p>Encuentra plantas que prosperan con menos agua y son ideales para nuestro clima.</p>
+            </div>
+            <a href="#contacto" class="btn">Inscríbete o sugerir un evento</a>
+        </section>
+
+        <section id="contacto" class="section-card">
+            <h2>Contacto y Envío de Historias</h2>
+            <p>¿Tienes una historia de éxito que compartir? ¿Quieres sugerir un evento o tienes preguntas? ¡Contáctanos!</p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Tu Mensaje o Historia:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+            <p id="formMessage" class="hidden"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Guardianes del Agua. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_Maps_API_KEY&callback=initMap"></script>
+</body>
+</html>
